@@ -17,10 +17,6 @@ Before publishing, place the current CV PDF at exactly:
 
 The navigation and hero CV links both use this path.
 
-## Remaining project links
+## Project links
 
-The HTML contains source comments marking project repositories that still need URLs. No placeholder or broken project buttons are shown on the website.
-
-- `TODO: add AMP benchmark repository URL`
-- `TODO: add Autograd repository URL`
-- `TODO: add Image Reconstruction repository URL`
+Public project repositories are linked beside their project titles. The AMP benchmark does not currently have a public repository link and is intentionally shown without a placeholder link.

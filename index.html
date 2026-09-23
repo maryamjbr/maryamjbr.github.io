@@ -37,14 +37,14 @@
 
     <main id="main-content">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <p class="eyebrow">Machine Learning Researcher</p>
+        <p class="eyebrow">Machine Learning · Deep Learning</p>
         <h1 id="hero-title">Maryam Jabbari</h1>
         <p class="degree-line">
           M.Sc. Bioinformatics <span aria-hidden="true">·</span> B.Sc. Computer Science<br>
           Amirkabir University of Technology
         </p>
         <p class="hero-bio">
-          I work on retrieval-augmented learning, representation learning, knowledge distillation, and efficient deep learning, with applications to biological and medical data. My current research includes retrieval-augmented protein language models and efficient 3D medical image analysis.
+          I study machine learning and deep learning methods, including retrieval-augmented learning, representation learning, knowledge distillation, and efficient deep learning, with applications to biological and medical data. My current research includes retrieval-augmented protein language models and efficient 3D medical image analysis.
         </p>
         <p class="interest-line">
           Multimodal Learning <span aria-hidden="true">·</span> Foundation Models <span aria-hidden="true">·</span> Representation Learning <span aria-hidden="true">·</span> Retrieval-Augmented Learning <span aria-hidden="true">·</span> Efficient Deep Learning
@@ -78,7 +78,6 @@
             <li>PyTorch</li>
             <li>Transformers</li>
           </ul>
-          <p class="item-status"><span>Status</span> Ongoing M.Sc. thesis</p>
         </article>
 
         <article class="research-item">
@@ -94,7 +93,6 @@
             <li>Dynamic Convolution</li>
             <li>Volumetric Imaging</li>
           </ul>
-          <p class="item-status"><span>Status</span> Manuscript in preparation</p>
         </article>
 
         <article class="research-item">
@@ -111,7 +109,6 @@
             <li>PyTorch</li>
             <li>ResNet</li>
           </ul>
-          <p class="item-status"><span>Status</span> B.Sc. thesis</p>
         </article>
       </section>
 
@@ -123,43 +120,53 @@
 
         <div class="project-list">
           <article class="project-item">
-            <h3>Multilabel Antimicrobial Peptide Classification Benchmark</h3>
+            <div class="project-heading">
+              <h3>Multilabel Antimicrobial Peptide Classification Benchmark</h3>
+            </div>
             <p>
               Built a controlled five-label antimicrobial peptide classification benchmark on ESCAPE. I compared seven frozen protein/peptide language-model encoders with six biological sequence representations under a shared MLP classifier, implemented overlap auditing and leakage-controlled splits, cached embeddings, used reciprocal-fold ensembling, and evaluated performance under severe label imbalance with multiple global and per-label metrics.
             </p>
             <p class="themes"><span>Technical themes:</span> PyTorch · Transformers · scikit-learn · Benchmarking · Representation Learning · Reproducible Evaluation</p>
-            <!-- TODO: add AMP benchmark repository URL -->
           </article>
 
           <article class="project-item">
-            <h3>Kolmogorov–Arnold Network from Scratch</h3>
+            <div class="project-heading">
+              <h3>Kolmogorov–Arnold Network from Scratch</h3>
+              <a href="https://github.com/maryamjbr/KAN" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+            </div>
             <p>
               Implemented a Kolmogorov–Arnold Network from scratch in PyTorch, with learnable univariate edge functions represented using cubic B-spline bases and a learnable SiLU residual component. I implemented B-spline evaluation with iterative Cox–de Boor dynamic programming, added correctness and gradient-flow tests, and benchmarked the model against width- and parameter-matched MLP baselines.
             </p>
             <p class="themes"><span>Technical themes:</span> PyTorch · B-Splines · Neural Network Architecture · Dynamic Programming · Gradient Testing</p>
-            <p class="project-link"><a href="https://github.com/maryamjbr/KAN" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></p>
           </article>
 
           <article class="project-item">
-            <h3>Autograd Engine and Neural Network from Scratch</h3>
+            <div class="project-heading">
+              <h3>Autograd Engine and Neural Network from Scratch</h3>
+              <a href="https://github.com/maryamjbr/MLP" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+            </div>
             <p>
               Implemented a scalar reverse-mode automatic differentiation engine with computational-graph construction, differentiable scalar operations, topological backpropagation, and gradient accumulation. I then built Neuron, Layer, and MLP abstractions on top of the engine with loss computation and gradient-descent updates.
             </p>
             <p class="themes"><span>Technical themes:</span> Python · Reverse-Mode Autodiff · Backpropagation · Computational Graphs · Neural Networks</p>
-            <!-- TODO: add Autograd repository URL -->
           </article>
 
           <article class="project-item">
-            <h3>Image Reconstruction via Regularized Inverse Problems</h3>
+            <div class="project-heading">
+              <h3>Image Reconstruction via Regularized Inverse Problems</h3>
+              <a href="https://github.com/maryamjbr/image-reconstruction-inverse-problems" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+            </div>
             <p>
               Modeled image degradation as a linear inverse problem with Gaussian blur, motion blur, and additive noise. I compared unregularized LSQR, zero-order Tikhonov regularization, Wiener filtering, and Richardson–Lucy deconvolution and analyzed reconstruction quality and parameter sensitivity using PSNR and SSIM.
             </p>
             <p class="themes"><span>Technical themes:</span> NumPy · SciPy · Inverse Problems · Numerical Optimization · Image Reconstruction</p>
-            <!-- TODO: add Image Reconstruction repository URL -->
           </article>
 
           <article class="project-item">
-            <h3>Dimensionality Reduction for scRNA-seq Data</h3>
+            <div class="project-heading">
+              <h3>Dimensionality Reduction for scRNA-seq Data</h3>
+              <a href="https://github.com/maryamjbr/scRNA-dim-reduction" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+            </div>
             <p>
               Built preprocessing pipelines for multiple single-cell RNA-seq datasets and compared PCA, t-SNE, UMAP, and a PyTorch VAE. I evaluated higher-dimensional representations through downstream K-means clustering using ARI, AMI, and Silhouette Score.
             </p>

@@ -6,7 +6,6 @@
   --accent: #496b82;
   --accent-dark: #31546b;
   --border: #dce1e3;
-  --tag-background: #edf2f4;
   --max-width: 960px;
 }
 
@@ -46,7 +45,7 @@ a:hover {
 
 a:focus-visible {
   border-radius: 2px;
-  outline: 3px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  outline: 3px solid var(--accent);
   outline-offset: 4px;
 }
 
@@ -71,9 +70,8 @@ a:focus-visible {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid color-mix(in srgb, var(--border) 82%, transparent);
-  background: color-mix(in srgb, var(--background) 95%, transparent);
-  backdrop-filter: blur(9px);
+  border-bottom: 1px solid var(--border);
+  background: var(--background);
 }
 
 .nav-wrap {
@@ -122,7 +120,7 @@ main,
 
 .hero {
   max-width: 850px;
-  padding: 8.5rem 0 7.75rem;
+  padding: 6.25rem 0 5.75rem;
 }
 
 .eyebrow,
@@ -226,31 +224,17 @@ h3 {
 }
 
 .research-item {
-  position: relative;
   max-width: 880px;
-  padding: 0.2rem 0 3.65rem 2rem;
-  border-left: 2px solid #c9d6dd;
+  padding: 0.2rem 0 3.65rem;
 }
 
 .research-item:not(:last-child) {
   margin-bottom: 3.6rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .research-item:last-child {
   padding-bottom: 0.2rem;
-}
-
-.research-item::before {
-  position: absolute;
-  top: 0.4rem;
-  left: -0.38rem;
-  width: 0.62rem;
-  height: 0.62rem;
-  border: 2px solid var(--background);
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 1px var(--accent);
-  content: "";
 }
 
 .research-item h3 {
@@ -268,30 +252,25 @@ h3 {
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
-  margin: 0 0 1.15rem;
+  gap: 0.25rem 0.55rem;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .tag-list li {
-  padding: 0.24rem 0.58rem;
-  border: 1px solid #d5dfe3;
-  border-radius: 2px;
-  background: var(--tag-background);
-  color: #445661;
+  color: var(--muted);
   font-size: 0.74rem;
   font-weight: 600;
   line-height: 1.5;
 }
 
-.item-status {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 0.83rem;
+.tag-list li:not(:last-child)::after {
+  margin-left: 0.55rem;
+  color: #9aa5ab;
+  content: "·";
 }
 
-.item-status span,
 .themes span {
   color: var(--text);
   font-weight: 700;
@@ -314,9 +293,23 @@ h3 {
   border-top: 0;
 }
 
-.project-item h3 {
+.project-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
   margin-bottom: 0.8rem;
+}
+
+.project-heading h3 {
+  margin-bottom: 0;
   font-size: 1.22rem;
+}
+
+.project-heading > a {
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
 .project-item > p {
@@ -331,12 +324,6 @@ h3 {
   color: var(--muted);
   font-size: 0.76rem;
   line-height: 1.65;
-}
-
-.project-item .project-link {
-  margin-top: 0.85rem;
-  font-size: 0.8rem;
-  font-weight: 700;
 }
 
 .education-item {
@@ -471,7 +458,11 @@ address {
 
 @media (max-width: 760px) {
   html {
-    scroll-padding-top: 8.5rem;
+    scroll-padding-top: 1.5rem;
+  }
+
+  .site-header {
+    position: static;
   }
 
   .nav-wrap {
@@ -486,19 +477,9 @@ address {
   }
 
   nav {
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 0.5rem 1rem;
-    overflow-x: auto;
-    padding-bottom: 0.1rem;
-    scrollbar-width: none;
-  }
-
-  nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  nav a {
-    flex: 0 0 auto;
   }
 
   main,
@@ -507,7 +488,7 @@ address {
   }
 
   .hero {
-    padding: 5.5rem 0 5rem;
+    padding: 4.5rem 0 4.25rem;
   }
 
   .section {
@@ -516,10 +497,6 @@ address {
 
   .section-heading {
     margin-bottom: 2.75rem;
-  }
-
-  .research-item {
-    padding-left: 1.25rem;
   }
 
   .research-item:not(:last-child) {
@@ -551,7 +528,7 @@ address {
   }
 
   .hero {
-    padding-top: 4.5rem;
+    padding-top: 3.75rem;
   }
 
   h1 {
@@ -588,6 +565,19 @@ address {
 
   address {
     display: grid;
+  }
+
+  .project-heading {
+    display: block;
+  }
+
+  .project-heading > a {
+    display: inline-block;
+    margin-top: 0.45rem;
+  }
+
+  .contact a {
+    overflow-wrap: anywhere;
   }
 }
 
