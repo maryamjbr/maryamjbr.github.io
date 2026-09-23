@@ -19,4 +19,4 @@ The navigation and hero CV links both use this path.
 
 ## Project links
 
-Public project repositories are linked beside their project titles. The AMP benchmark does not currently have a public repository link and is intentionally shown without a placeholder link.
+Each public project repository has a visible "View on GitHub" link in its project card. The AMP benchmark repository is private, so its card shows that status without sending visitors to a broken link.
