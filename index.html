@@ -46,7 +46,7 @@
           Amirkabir University of Technology
         </p>
         <p class="hero-bio">
-          I study machine learning and deep learning methods, including retrieval-augmented learning, representation learning, knowledge distillation, and efficient deep learning, with applications to biological and medical data. My current research includes retrieval-augmented protein language models and efficient 3D medical image analysis.
+          I am a second-year M.Sc. student in Bioinformatics at Amirkabir University of Technology, where I also completed my B.Sc. in Computer Science. My research focuses on machine learning for biological and medical data, from retrieval-augmented protein models to efficient 3D medical image segmentation. I have also worked on attention-guided knowledge distillation.
         </p>
         <p class="interest-line">
           Multimodal Learning <span aria-hidden="true">·</span> Foundation Models <span aria-hidden="true">·</span> Representation Learning <span aria-hidden="true">·</span> Retrieval-Augmented Learning <span aria-hidden="true">·</span> Efficient Deep Learning
@@ -54,7 +54,7 @@
         <div class="hero-links" aria-label="Profile links">
           <a class="button button-primary" href="assets/Maryam_Jabbari_CV.pdf">View CV <span aria-hidden="true">↗</span></a>
           <a class="button button-secondary" href="https://github.com/maryamjbr" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-          <a class="email-link" href="mailto:maryamjabbari@aut.ac.ir">Email <span aria-hidden="true">↗</span></a>
+          <a class="email-link" href="mailto:maryaamjabbari@gmail.com">Email <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
@@ -67,7 +67,7 @@
           <p class="item-meta">M.Sc. Thesis <span aria-hidden="true">·</span> 2026–Present</p>
           <h3>Retrieval-Augmented Protein Language Models for Multi-Label Antimicrobial Peptide Classification</h3>
           <p class="item-description">
-            I am adapting retrieval-augmented protein language models to peptide sequences for multi-label antimicrobial function classification. My work compares retrieval-augmented representations with non-retrieval and frozen-retrieval baselines and uses controlled experiments to study how retrieved sequence information affects learned representations and downstream classification.
+            I am adapting a retrieval-augmented protein language model to peptide sequences for multi-label antimicrobial function classification. I compare retrieval strategies with non-retrieval and frozen-retrieval baselines, using controlled experiments to study how retrieved sequences affect learned representations and classification.
           </p>
           <ul class="tag-list" aria-label="Technical themes">
             <li>Retrieval-Augmented Learning</li>
@@ -98,7 +98,7 @@
           <p class="item-meta">B.Sc. Thesis <span aria-hidden="true">·</span> 2024–2025 <span aria-hidden="true">·</span> Grade: 20/20</p>
           <h3>Feature-Based Knowledge Distillation with CBAM Attention</h3>
           <p class="item-description">
-            I developed a teacher–student knowledge-distillation framework on CIFAR-100 using a ResNet-56 teacher and ResNet-20 student. The method combines CBAM-guided intermediate feature matching with conventional logit distillation to study attention-guided feature-level and prediction-level knowledge transfer.
+            I developed a teacher–student knowledge-distillation framework on CIFAR-100 with a ResNet-56 teacher and ResNet-20 student. It combines CBAM-guided matching of intermediate features with logit distillation. CBAM is used during training; the final student remains a standard ResNet-20 at inference.
           </p>
           <ul class="tag-list" aria-label="Technical themes">
             <li>Knowledge Distillation</li>
@@ -108,6 +108,7 @@
             <li>PyTorch</li>
             <li>ResNet</li>
           </ul>
+          <a class="project-link" href="https://github.com/maryamjbr/cbam-kd-cifar100" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
         </article>
       </section>
 
@@ -122,7 +123,7 @@
               <h3>Multilabel Antimicrobial Peptide Classification Benchmark</h3>
             </div>
             <p>
-              Built a controlled five-label antimicrobial peptide classification benchmark on ESCAPE. I compared seven frozen protein/peptide language-model encoders with six biological sequence representations under a shared MLP classifier, implemented overlap auditing and leakage-controlled splits, cached embeddings, used reciprocal-fold ensembling, and evaluated performance under severe label imbalance with multiple global and per-label metrics.
+              Built a five-label antimicrobial peptide benchmark on ESCAPE. I compared seven frozen protein and peptide language-model encoders with six biological sequence representations under the same MLP classifier, then evaluated the biological representations with Random Forests. The pipeline includes overlap auditing, leakage-controlled splits, cached embeddings, reciprocal-fold ensembling, and per-label evaluation under severe class imbalance.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>PyTorch</li>
@@ -157,7 +158,7 @@
               <h3>Autograd Engine and Neural Network from Scratch</h3>
             </div>
             <p>
-              Implemented a scalar reverse-mode automatic differentiation engine with computational-graph construction, differentiable scalar operations, topological backpropagation, and gradient accumulation. I then built Neuron, Layer, and MLP abstractions on top of the engine with loss computation and gradient-descent updates.
+              Implemented a scalar reverse-mode automatic differentiation engine with computational graphs, differentiable operations, topological backpropagation, and gradient accumulation. I built Neuron, Layer, and MLP abstractions on top, then trained the network with MSE loss and gradient descent and visualized the graph with Graphviz.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>Python</li>
@@ -191,7 +192,7 @@
               <h3>Dimensionality Reduction for scRNA-seq Data</h3>
             </div>
             <p>
-              Built preprocessing pipelines for multiple single-cell RNA-seq datasets and compared PCA, t-SNE, UMAP, and a PyTorch VAE. I evaluated higher-dimensional representations through downstream K-means clustering using ARI, AMI, and Silhouette Score.
+              Built dataset-specific preprocessing for selected Deng, Chu, and PBMC68k single-cell RNA-seq data, then compared PCA, t-SNE, UMAP, and a PyTorch VAE. I evaluated the reduced representations with downstream K-means clustering using ARI, AMI, and Silhouette Score.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>Representation Learning</li>
@@ -272,7 +273,7 @@
 
       <section class="section compact-section" id="technical-areas" aria-labelledby="technical-title">
         <div class="section-heading">
-          <h2 id="technical-title">Research Interests / Technical Areas</h2>
+          <h2 id="technical-title">Skills & Technologies</h2>
         </div>
         <dl class="technical-list">
           <div>
@@ -306,8 +307,9 @@
           I am preparing for PhD applications for Fall 2027 and am interested in research on machine learning, representation learning, foundation models, and efficient deep learning.
         </p>
         <address>
-          <span>Email: <a href="mailto:maryamjabbari@aut.ac.ir">maryamjabbari@aut.ac.ir</a></span>
+          <span>Email: <a href="mailto:maryaamjabbari@gmail.com">maryaamjabbari@gmail.com</a></span>
           <span>GitHub: <a href="https://github.com/maryamjbr" target="_blank" rel="noopener noreferrer">github.com/maryamjbr</a></span>
+          <span>Phone: <a href="tel:+989127657384">+98 912 765 7384</a></span>
         </address>
       </div>
     </footer>
