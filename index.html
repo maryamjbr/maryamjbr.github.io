@@ -7,7 +7,7 @@
       name="description"
       content="Maryam Jabbari is a machine-learning researcher working on representation learning, retrieval-augmented learning, and efficient deep learning for biological and medical data."
     >
-    <meta name="theme-color" content="#f8f7f3">
+    <meta name="theme-color" content="#f8fafc">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Maryam Jabbari">
     <meta
@@ -16,6 +16,9 @@
     >
     <title>Maryam Jabbari</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -37,7 +40,6 @@
 
     <main id="main-content">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <p class="eyebrow">Machine Learning · Deep Learning</p>
         <h1 id="hero-title">Maryam Jabbari</h1>
         <p class="degree-line">
           M.Sc. Bioinformatics <span aria-hidden="true">·</span> B.Sc. Computer Science<br>
@@ -50,17 +52,14 @@
           Multimodal Learning <span aria-hidden="true">·</span> Foundation Models <span aria-hidden="true">·</span> Representation Learning <span aria-hidden="true">·</span> Retrieval-Augmented Learning <span aria-hidden="true">·</span> Efficient Deep Learning
         </p>
         <div class="hero-links" aria-label="Profile links">
-          <a href="assets/Maryam_Jabbari_CV.pdf">CV</a>
-          <span aria-hidden="true">·</span>
-          <a href="https://github.com/maryamjbr" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <span aria-hidden="true">·</span>
-          <a href="mailto:maryaamjabbari@gmail.com">Email</a>
+          <a class="button button-primary" href="assets/Maryam_Jabbari_CV.pdf">View CV <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://github.com/maryamjbr" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="email-link" href="mailto:maryamjabbari@aut.ac.ir">Email <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
       <section class="section research-section" id="research" aria-labelledby="research-title">
         <div class="section-heading">
-          <p class="section-kicker">Current and recent work</p>
           <h2 id="research-title">Selected Research</h2>
         </div>
 
@@ -114,7 +113,6 @@
 
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading">
-          <p class="section-kicker">Selected implementations</p>
           <h2 id="projects-title">Selected Technical Projects</h2>
         </div>
 
@@ -126,58 +124,90 @@
             <p>
               Built a controlled five-label antimicrobial peptide classification benchmark on ESCAPE. I compared seven frozen protein/peptide language-model encoders with six biological sequence representations under a shared MLP classifier, implemented overlap auditing and leakage-controlled splits, cached embeddings, used reciprocal-fold ensembling, and evaluated performance under severe label imbalance with multiple global and per-label metrics.
             </p>
-            <p class="themes"><span>Technical themes:</span> PyTorch · Transformers · scikit-learn · Benchmarking · Representation Learning · Reproducible Evaluation</p>
+            <ul class="tag-list" aria-label="Technical themes">
+              <li>PyTorch</li>
+              <li>Transformers</li>
+              <li>scikit-learn</li>
+              <li>Benchmarking</li>
+              <li>Representation Learning</li>
+              <li>Reproducible Evaluation</li>
+            </ul>
+            <span class="project-unavailable">Code repository currently private</span>
           </article>
 
           <article class="project-item">
             <div class="project-heading">
               <h3>Kolmogorov–Arnold Network from Scratch</h3>
-              <a href="https://github.com/maryamjbr/KAN" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
             </div>
             <p>
               Implemented a Kolmogorov–Arnold Network from scratch in PyTorch, with learnable univariate edge functions represented using cubic B-spline bases and a learnable SiLU residual component. I implemented B-spline evaluation with iterative Cox–de Boor dynamic programming, added correctness and gradient-flow tests, and benchmarked the model against width- and parameter-matched MLP baselines.
             </p>
-            <p class="themes"><span>Technical themes:</span> PyTorch · B-Splines · Neural Network Architecture · Dynamic Programming · Gradient Testing</p>
+            <ul class="tag-list" aria-label="Technical themes">
+              <li>PyTorch</li>
+              <li>B-Splines</li>
+              <li>Neural Network Architecture</li>
+              <li>Dynamic Programming</li>
+              <li>Gradient Testing</li>
+            </ul>
+            <a class="project-link" href="https://github.com/maryamjbr/KAN" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="project-item">
             <div class="project-heading">
               <h3>Autograd Engine and Neural Network from Scratch</h3>
-              <a href="https://github.com/maryamjbr/MLP" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
             </div>
             <p>
               Implemented a scalar reverse-mode automatic differentiation engine with computational-graph construction, differentiable scalar operations, topological backpropagation, and gradient accumulation. I then built Neuron, Layer, and MLP abstractions on top of the engine with loss computation and gradient-descent updates.
             </p>
-            <p class="themes"><span>Technical themes:</span> Python · Reverse-Mode Autodiff · Backpropagation · Computational Graphs · Neural Networks</p>
+            <ul class="tag-list" aria-label="Technical themes">
+              <li>Python</li>
+              <li>Reverse-Mode Autodiff</li>
+              <li>Backpropagation</li>
+              <li>Computational Graphs</li>
+              <li>Neural Networks</li>
+            </ul>
+            <a class="project-link" href="https://github.com/maryamjbr/MLP" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="project-item">
             <div class="project-heading">
               <h3>Image Reconstruction via Regularized Inverse Problems</h3>
-              <a href="https://github.com/maryamjbr/image-reconstruction-inverse-problems" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
             </div>
             <p>
               Modeled image degradation as a linear inverse problem with Gaussian blur, motion blur, and additive noise. I compared unregularized LSQR, zero-order Tikhonov regularization, Wiener filtering, and Richardson–Lucy deconvolution and analyzed reconstruction quality and parameter sensitivity using PSNR and SSIM.
             </p>
-            <p class="themes"><span>Technical themes:</span> NumPy · SciPy · Inverse Problems · Numerical Optimization · Image Reconstruction</p>
+            <ul class="tag-list" aria-label="Technical themes">
+              <li>NumPy</li>
+              <li>SciPy</li>
+              <li>Inverse Problems</li>
+              <li>Numerical Optimization</li>
+              <li>Image Reconstruction</li>
+            </ul>
+            <a class="project-link" href="https://github.com/maryamjbr/image-reconstruction-inverse-problems" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
           </article>
 
           <article class="project-item">
             <div class="project-heading">
               <h3>Dimensionality Reduction for scRNA-seq Data</h3>
-              <a href="https://github.com/maryamjbr/scRNA-dim-reduction" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
             </div>
             <p>
               Built preprocessing pipelines for multiple single-cell RNA-seq datasets and compared PCA, t-SNE, UMAP, and a PyTorch VAE. I evaluated higher-dimensional representations through downstream K-means clustering using ARI, AMI, and Silhouette Score.
             </p>
-            <p class="themes"><span>Technical themes:</span> Representation Learning · VAE · PCA · UMAP · scRNA-seq · PyTorch</p>
+            <ul class="tag-list" aria-label="Technical themes">
+              <li>Representation Learning</li>
+              <li>VAE</li>
+              <li>PCA</li>
+              <li>UMAP</li>
+              <li>scRNA-seq</li>
+              <li>PyTorch</li>
+            </ul>
+            <a class="project-link" href="https://github.com/maryamjbr/scRNA-dim-reduction" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
           </article>
         </div>
       </section>
 
       <section class="section" id="education" aria-labelledby="education-title">
         <div class="section-heading">
-          <p class="section-kicker">Academic background</p>
           <h2 id="education-title">Education</h2>
         </div>
 
@@ -230,7 +260,6 @@
 
       <section class="section compact-section" id="honors" aria-labelledby="honors-title">
         <div class="section-heading">
-          <p class="section-kicker">Recognition</p>
           <h2 id="honors-title">Honors</h2>
         </div>
         <ul class="honors-list">
@@ -243,7 +272,6 @@
 
       <section class="section compact-section" id="technical-areas" aria-labelledby="technical-title">
         <div class="section-heading">
-          <p class="section-kicker">Methods and tools</p>
           <h2 id="technical-title">Research Interests / Technical Areas</h2>
         </div>
         <dl class="technical-list">
@@ -273,13 +301,12 @@
 
     <footer class="contact" id="contact" aria-labelledby="contact-title">
       <div class="contact-inner">
-        <p class="section-kicker">Get in touch</p>
         <h2 id="contact-title">Maryam Jabbari</h2>
         <p>
           I am preparing for PhD applications for Fall 2027 and am interested in research on machine learning, representation learning, foundation models, and efficient deep learning.
         </p>
         <address>
-          <span>Email: <a href="mailto:maryaamjabbari@gmail.com">maryaamjabbari@gmail.com</a></span>
+          <span>Email: <a href="mailto:maryamjabbari@aut.ac.ir">maryamjabbari@aut.ac.ir</a></span>
           <span>GitHub: <a href="https://github.com/maryamjbr" target="_blank" rel="noopener noreferrer">github.com/maryamjbr</a></span>
         </address>
       </div>
