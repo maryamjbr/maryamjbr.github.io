@@ -186,12 +186,6 @@ main,.contact-inner {
   border-color: var(--blue-dark);
   color: var(--blue-dark);
 }
-.email-link {
-  padding: .5rem .3rem;
-  font-weight: 700;
-  font-size: .88rem;
-  text-decoration: none;
-}
 .section {
   position: relative;
   isolation: isolate;
