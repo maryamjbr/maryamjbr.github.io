@@ -28,6 +28,7 @@
       <div class="nav-wrap">
         <a class="site-name" href="#top" aria-label="Maryam Jabbari — back to top">Maryam Jabbari</a>
         <nav aria-label="Primary navigation">
+          <a href="#top">About</a>
           <a href="#research">Research</a>
           <a href="#projects">Projects</a>
           <a href="#education">Education</a>
@@ -68,7 +69,7 @@
           <p class="item-meta">M.Sc. Thesis <span aria-hidden="true">·</span> 2026–Present</p>
           <h3>Retrieval-Augmented Protein Language Models for Multi-Label Antimicrobial Peptide Classification</h3>
           <p class="item-description">
-            I am adapting a retrieval-augmented protein language model to peptide sequences for multi-label antimicrobial function classification. My work involves designing controlled experiments and systematic evaluation protocols to study how retrieved sequence information affects learned representations and downstream classification performance.
+            I am adapting a retrieval-augmented protein language model to peptide sequences for multi-label antimicrobial function classification. I compare retrieval strategies with non-retrieval and frozen-retrieval baselines, using controlled experiments to study how retrieved sequences affect learned representations and classification.
           </p>
           <ul class="tag-list" aria-label="Technical themes">
             <li>Retrieval-Augmented Learning</li>
@@ -84,7 +85,7 @@
           <p class="item-meta">INSF-Funded Research Project <span aria-hidden="true">·</span> 2024–Present <span aria-hidden="true">·</span> Manuscript in Preparation</p>
           <h3>Efficient MobileNet-Based Architecture for 3D Medical Image Segmentation</h3>
           <p class="item-description">
-          I am contributing to the design and evaluation of a MobileNet-based 3D CNN for volumetric medical image segmentation. The work investigates input-adaptive dynamic convolutions, target-spacing, and stem-stride planning for efficient volumetric inference. I also contribute to architectural design, experimental analysis, and manuscript preparation.
+            I am contributing to the design and evaluation of a MobileNet-based 3D CNN for volumetric medical image segmentation. The architecture uses inverted bottleneck blocks and explores input-adaptive dynamic convolutions, target-spacing, and stem-stride design for efficient volumetric inference. I also contribute to experimental analysis and manuscript preparation.
           </p>
           <ul class="tag-list" aria-label="Technical themes">
             <li>3D Deep Learning</li>
@@ -99,7 +100,7 @@
           <p class="item-meta">B.Sc. Thesis <span aria-hidden="true">·</span> 2024–2025 <span aria-hidden="true">·</span> Grade: 20/20</p>
           <h3>Feature-Based Knowledge Distillation with CBAM Attention</h3>
           <p class="item-description">
-            I developed a feature-based knowledge-distillation framework on CIFAR-100 using a ResNet-56 teacher and ResNet-20 student. The method combines CBAM-guided intermediate feature matching with conventional logit distillation for feature-level and prediction-level knowledge transfer. I evaluated the effect of attention-based feature transfer and conventional distillation on student-model performance.
+            I developed a teacher–student knowledge-distillation framework on CIFAR-100 with a ResNet-56 teacher and ResNet-20 student. It combines CBAM-guided matching of intermediate features with logit distillation. CBAM is used during training; the final student remains a standard ResNet-20 at inference.
           </p>
           <ul class="tag-list" aria-label="Technical themes">
             <li>Knowledge Distillation</li>
@@ -124,7 +125,7 @@
               <h3>Multilabel Antimicrobial Peptide Classification Benchmark</h3>
             </div>
             <p>
-             Built a controlled five-label antimicrobial peptide classification benchmark on ESCAPE using reciprocal Fold1/Fold2 training and an independent test set. I compared seven frozen protein and peptide language-model encoders with six biological sequence representations under a shared flat MLP, and also evaluated the biological representations with Random Forest classifiers. The pipeline includes overlap auditing, leakage-controlled splits, embedding caching, reciprocal-fold ensembling, and global and per-label evaluation under severe class imbalance.
+              Built a five-label antimicrobial peptide benchmark on ESCAPE. I compared seven frozen protein and peptide language-model encoders with six biological sequence representations under the same MLP classifier, then evaluated the biological representations with Random Forests. The pipeline includes overlap auditing, leakage-controlled splits, cached embeddings, reciprocal-fold ensembling, and per-label evaluation under severe class imbalance.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>PyTorch</li>
@@ -142,7 +143,7 @@
               <h3>Kolmogorov–Arnold Network from Scratch</h3>
             </div>
             <p>
-             Implemented a Kolmogorov–Arnold Network from scratch in PyTorch, with learnable univariate edge functions represented using cubic B-spline bases and a learnable SiLU residual component. I implemented B-spline evaluation with iterative Cox–de Boor dynamic programming, added automated correctness and gradient-flow tests, and benchmarked the model on Iris and Digits against width-matched and approximately parameter-matched MLP baselines.
+              Implemented a Kolmogorov–Arnold Network from scratch in PyTorch, with learnable univariate edge functions represented using cubic B-spline bases and a learnable SiLU residual component. I implemented B-spline evaluation with iterative Cox–de Boor dynamic programming, added correctness and gradient-flow tests, and benchmarked the model against width- and parameter-matched MLP baselines.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>PyTorch</li>
@@ -159,7 +160,7 @@
               <h3>Autograd Engine and Neural Network from Scratch</h3>
             </div>
             <p>
-              Implemented a scalar reverse-mode automatic differentiation engine with computational-graph construction, differentiable scalar operations, topological backpropagation, and gradient accumulation. I built Neuron, Layer, and MLP abstractions on top of the engine, including tanh activations, MSE loss, gradient-descent updates, and computational-graph visualization with Graphviz.
+              Implemented a scalar reverse-mode automatic differentiation engine with computational graphs, differentiable operations, topological backpropagation, and gradient accumulation. I built Neuron, Layer, and MLP abstractions on top, then trained the network with MSE loss and gradient descent and visualized the graph with Graphviz.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>Python</li>
@@ -176,7 +177,7 @@
               <h3>Image Reconstruction via Regularized Inverse Problems</h3>
             </div>
             <p>
-              Modeled image degradation as a linear inverse problem with Gaussian blur, motion blur, and additive noise, representing the spatial forward operator with a SciPy LinearOperator. I compared unregularized LSQR, zero-order Tikhonov regularization, Wiener filtering, and Richardson–Lucy deconvolution, and analyzed reconstruction quality and parameter sensitivity using PSNR and SSIM.
+              Modeled image degradation as a linear inverse problem with Gaussian blur, motion blur, and additive noise. I compared unregularized LSQR, zero-order Tikhonov regularization, Wiener filtering, and Richardson–Lucy deconvolution and analyzed reconstruction quality and parameter sensitivity using PSNR and SSIM.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>NumPy</li>
@@ -193,7 +194,7 @@
               <h3>Dimensionality Reduction for scRNA-seq Data</h3>
             </div>
             <p>
-              Built dataset-specific preprocessing pipelines for Deng, Chu, and a filtered PBMC68k subset. I compared PCA, t-SNE, UMAP, and a project-specific PyTorch VAE using two-dimensional visualizations and higher-dimensional representations for downstream analysis. I evaluated the resulting representations with K-means clustering using ARI, AMI, and Silhouette Score.
+              Built dataset-specific preprocessing for selected Deng, Chu, and PBMC68k single-cell RNA-seq data, then compared PCA, t-SNE, UMAP, and a PyTorch VAE. I evaluated the reduced representations with downstream K-means clustering using ARI, AMI, and Silhouette Score.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>Representation Learning</li>
@@ -303,15 +304,28 @@
 
     <footer class="contact" id="contact" aria-labelledby="contact-title">
       <div class="contact-inner">
-        <h2 id="contact-title">Maryam Jabbari</h2>
+        <h2 id="contact-title">Contact</h2>
         <p>
           I am preparing for PhD applications for Fall 2027 and am interested in research on machine learning, representation learning, foundation models, and efficient deep learning.
         </p>
-        <address>
-          <span>Email: <a href="mailto:maryaamjabbari@gmail.com">maryaamjabbari@gmail.com</a></span>
-          <span>GitHub: <a href="https://github.com/maryamjbr" target="_blank" rel="noopener noreferrer">github.com/maryamjbr</a></span>
-          <span>LinkedIn: <a href="https://www.linkedin.com/in/maryaam-jabbari/" target="_blank" rel="noopener noreferrer">linkedin.com/in/maryaam-jabbari</a></span>
+        <address class="contact-links">
+          <a class="contact-card" href="mailto:maryaamjabbari@gmail.com">
+            <span class="contact-card-label">Email</span>
+            <span class="contact-card-value">maryaamjabbari@gmail.com</span>
+            <span class="contact-card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-card" href="https://github.com/maryamjbr" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card-label">GitHub</span>
+            <span class="contact-card-value">github.com/maryamjbr</span>
+            <span class="contact-card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/maryaam-jabbari/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">linkedin.com/in/maryaam-jabbari</span>
+            <span class="contact-card-arrow" aria-hidden="true">↗</span>
+          </a>
         </address>
+        <a class="button button-secondary back-to-about" href="#top">Back to About <span aria-hidden="true">↑</span></a>
       </div>
     </footer>
   </body>
