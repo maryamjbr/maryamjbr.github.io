@@ -124,7 +124,7 @@
               <h3>Multilabel Antimicrobial Peptide Classification Benchmark</h3>
             </div>
             <p>
-              Built a five-label antimicrobial peptide benchmark on ESCAPE. I compared seven frozen protein and peptide language-model encoders with six biological sequence representations under the same MLP classifier, then evaluated the biological representations with Random Forests. The pipeline includes overlap auditing, leakage-controlled splits, cached embeddings, reciprocal-fold ensembling, and per-label evaluation under severe class imbalance.
+             Built a controlled five-label antimicrobial peptide classification benchmark on ESCAPE using reciprocal Fold1/Fold2 training and an independent test set. I compared seven frozen protein and peptide language-model encoders with six biological sequence representations under a shared flat MLP, and also evaluated the biological representations with Random Forest classifiers. The pipeline includes overlap auditing, leakage-controlled splits, embedding caching, reciprocal-fold ensembling, and global and per-label evaluation under severe class imbalance.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>PyTorch</li>
