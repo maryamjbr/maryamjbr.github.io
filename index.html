@@ -84,7 +84,7 @@
           <p class="item-meta">INSF-Funded Research Project <span aria-hidden="true">·</span> 2024–Present <span aria-hidden="true">·</span> Manuscript in Preparation</p>
           <h3>Efficient MobileNet-Based Architecture for 3D Medical Image Segmentation</h3>
           <p class="item-description">
-            I am contributing to the design and evaluation of a MobileNet-based 3D CNN for volumetric medical image segmentation. The architecture uses inverted bottleneck blocks and explores input-adaptive dynamic convolutions, target-spacing, and stem-stride design for efficient volumetric inference. I also contribute to experimental analysis and manuscript preparation.
+          I am contributing to the design and evaluation of a MobileNet-based 3D CNN for volumetric medical image segmentation. The work investigates input-adaptive dynamic convolutions, target-spacing, and stem-stride planning for efficient volumetric inference. I also contribute to architectural design, experimental analysis, and manuscript preparation.
           </p>
           <ul class="tag-list" aria-label="Technical themes">
             <li>3D Deep Learning</li>
@@ -99,7 +99,7 @@
           <p class="item-meta">B.Sc. Thesis <span aria-hidden="true">·</span> 2024–2025 <span aria-hidden="true">·</span> Grade: 20/20</p>
           <h3>Feature-Based Knowledge Distillation with CBAM Attention</h3>
           <p class="item-description">
-            I developed a teacher–student knowledge-distillation framework on CIFAR-100 with a ResNet-56 teacher and ResNet-20 student. It combines CBAM-guided matching of intermediate features with logit distillation. CBAM is used during training; the final student remains a standard ResNet-20 at inference.
+            I developed a feature-based knowledge-distillation framework on CIFAR-100 using a ResNet-56 teacher and ResNet-20 student. The method combines CBAM-guided intermediate feature matching with conventional logit distillation for feature-level and prediction-level knowledge transfer. I evaluated the effect of attention-based feature transfer and conventional distillation on student-model performance.
           </p>
           <ul class="tag-list" aria-label="Technical themes">
             <li>Knowledge Distillation</li>
@@ -142,7 +142,7 @@
               <h3>Kolmogorov–Arnold Network from Scratch</h3>
             </div>
             <p>
-              Implemented a Kolmogorov–Arnold Network from scratch in PyTorch, with learnable univariate edge functions represented using cubic B-spline bases and a learnable SiLU residual component. I implemented B-spline evaluation with iterative Cox–de Boor dynamic programming, added correctness and gradient-flow tests, and benchmarked the model against width- and parameter-matched MLP baselines.
+             Implemented a Kolmogorov–Arnold Network from scratch in PyTorch, with learnable univariate edge functions represented using cubic B-spline bases and a learnable SiLU residual component. I implemented B-spline evaluation with iterative Cox–de Boor dynamic programming, added automated correctness and gradient-flow tests, and benchmarked the model on Iris and Digits against width-matched and approximately parameter-matched MLP baselines.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>PyTorch</li>
@@ -159,7 +159,7 @@
               <h3>Autograd Engine and Neural Network from Scratch</h3>
             </div>
             <p>
-              Implemented a scalar reverse-mode automatic differentiation engine with computational graphs, differentiable operations, topological backpropagation, and gradient accumulation. I built Neuron, Layer, and MLP abstractions on top, then trained the network with MSE loss and gradient descent and visualized the graph with Graphviz.
+              Implemented a scalar reverse-mode automatic differentiation engine with computational-graph construction, differentiable scalar operations, topological backpropagation, and gradient accumulation. I built Neuron, Layer, and MLP abstractions on top of the engine, including tanh activations, MSE loss, gradient-descent updates, and computational-graph visualization with Graphviz.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>Python</li>
@@ -176,7 +176,7 @@
               <h3>Image Reconstruction via Regularized Inverse Problems</h3>
             </div>
             <p>
-              Modeled image degradation as a linear inverse problem with Gaussian blur, motion blur, and additive noise. I compared unregularized LSQR, zero-order Tikhonov regularization, Wiener filtering, and Richardson–Lucy deconvolution and analyzed reconstruction quality and parameter sensitivity using PSNR and SSIM.
+              Modeled image degradation as a linear inverse problem with Gaussian blur, motion blur, and additive noise, representing the spatial forward operator with a SciPy LinearOperator. I compared unregularized LSQR, zero-order Tikhonov regularization, Wiener filtering, and Richardson–Lucy deconvolution, and analyzed reconstruction quality and parameter sensitivity using PSNR and SSIM.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>NumPy</li>
@@ -193,7 +193,7 @@
               <h3>Dimensionality Reduction for scRNA-seq Data</h3>
             </div>
             <p>
-              Built dataset-specific preprocessing for selected Deng, Chu, and PBMC68k single-cell RNA-seq data, then compared PCA, t-SNE, UMAP, and a PyTorch VAE. I evaluated the reduced representations with downstream K-means clustering using ARI, AMI, and Silhouette Score.
+              Built dataset-specific preprocessing pipelines for Deng, Chu, and a filtered PBMC68k subset. I compared PCA, t-SNE, UMAP, and a project-specific PyTorch VAE using two-dimensional visualizations and higher-dimensional representations for downstream analysis. I evaluated the resulting representations with K-means clustering using ARI, AMI, and Silhouette Score.
             </p>
             <ul class="tag-list" aria-label="Technical themes">
               <li>Representation Learning</li>
