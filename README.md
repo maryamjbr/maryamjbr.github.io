@@ -1,22 +1,42 @@
-# Maryam Jabbari — Academic Research Homepage
+# Maryam Jabbari — Academic Research Portfolio
 
-This repository contains my single-page academic research homepage for PhD applications. It is a static site built with HTML and CSS and is designed to deploy directly through GitHub Pages.
+This repository contains the source code for my academic research portfolio.
 
-## Publish with GitHub Pages
+The site presents my research experience, selected technical projects, education, honors, and research interests, with a focus on machine learning for biological and medical data.
 
-1. Open this repository on GitHub and go to **Settings → Pages**.
-2. Under **Build and deployment**, select **Deploy from a branch**.
-3. Choose the `main` branch and the `/ (root)` folder, then save.
-4. GitHub will publish the site at `https://maryamjbr.github.io/`.
+**Live site:** https://maryamjbr.github.io/
+
+## Research Areas
+
+- Protein Language Models
+- Retrieval-Augmented Learning
+- Representation Learning
+- Multimodal Learning
+- Efficient Deep Learning
+- Medical Image Analysis
+
+## Selected Research
+
+The portfolio highlights my current and previous research, including:
+
+- Retrieval-Augmented Protein Language Models for Multi-Label Antimicrobial Peptide Classification
+- Efficient MobileNet-Based Architecture for 3D Medical Image Segmentation
+- Feature-Based Knowledge Distillation with CBAM Attention
+
+It also includes selected technical projects in computational biology, deep learning, numerical methods, and machine learning.
+
+## Implementation
+
+The website is a lightweight static site built with:
+
+- HTML
+- CSS
+- GitHub Pages
 
 ## CV
 
-Before publishing, place the current CV PDF at exactly:
+My current academic CV is available directly through the website.
 
-`assets/Maryam_Jabbari_CV.pdf`
+## Contact
 
-The navigation and hero CV links both use this path.
-
-## Project links
-
-Each public project repository has a visible "View on GitHub" link in its project card. The AMP benchmark repository is private, so its card shows that status without sending visitors to a broken link.
+For research or PhD-related inquiries, contact information is available on the homepage.
