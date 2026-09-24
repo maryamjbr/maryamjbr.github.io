@@ -465,10 +465,10 @@ dd {
 .contact-card {
   position: relative;
   display: flex;
-  flex-direction: column;
-  gap: .25rem;
+  align-items: center;
+  gap: .8rem;
   min-width: 0;
-  padding: 1.15rem 2rem 1.15rem 1.2rem;
+  padding: 1.15rem 2rem 1.15rem 1rem;
   border: 1px solid var(--border);
   border-radius: 12px;
   background: #fff;
@@ -482,6 +482,26 @@ dd {
   border-color: var(--blue);
   color: var(--text);
   box-shadow: 0 8px 20px rgba(79,120,144,.12);
+}
+.contact-card-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  background: var(--tint);
+  color: var(--blue-dark);
+}
+.contact-card-icon svg {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.contact-card-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 .contact-card-label {
   color: var(--blue-dark);
@@ -503,9 +523,6 @@ dd {
 }
 .contact-card:hover .contact-card-arrow {
   transform: translate(2px,-2px);
-}
-.back-to-about {
-  margin-top: 1.8rem;
 }
 @media(max-width:800px) {
   html {
